@@ -7,6 +7,7 @@ class App extends Component {
 constructor (props) {
 super(props);
 this.state = { text: '' };
+this.state={text1:''};
 }
 onPress = () => {
   console.log(this.state.text);
