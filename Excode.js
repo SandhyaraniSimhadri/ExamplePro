@@ -6,6 +6,7 @@ class Excode extends Component {
     constructor(props) {  
         super(props);  
         this.state = {text: ''};  
+        this.state={text1:''};
         
     }  
   
@@ -16,8 +17,16 @@ class Excode extends Component {
             <View style={{padding: 10}}>  
                 <TextInput  
                     style={{height: 40,backgroundColor: 'azure', fontSize: 20}}  
-                    placeholder="Type here to translate!"  
+                    placeholder="Username"  
                     onChangeText={(text) => this.setState({text})}  
+                />  
+            </View>  
+            <View style={{padding: 10}}>  
+                <TextInput  
+                    secureTextEntry={true}
+                    style={{height: 40,backgroundColor: 'azure', fontSize: 20}}  
+                    placeholder="Password"  
+                    onChangeText={(text1) => this.setState({text1})}  
                 />  
             </View>  
 
